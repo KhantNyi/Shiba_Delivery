@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Source Sans Pro;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* ==== UTLITIY CLASS ==== */
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  /* hide 10px gap caused by h1 h2 tag */
+  padding: 0 40px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  /* 2 section bc 2 child in parent */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
+    padding: 20px;
+    margin: 10px;
+    transition: transform 0.2s ease-in;
+  }
+
+/* ==== NAV BAR ==== */
+
+.navbar {
+  background: #3c31dd;
+  color: white;
+}
+
+.navbar .title {
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.navbar img {
+  max-width: 150px;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  padding: 15px;
+}
+
+.navbar li {
+  margin-left: 100px;
+  font-size: 1.4rem;
+}
+
+.navbar li:hover {
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  text-shadow: none;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* wave svg  */
+
+.spacer .hero-text {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10vh;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+}
+.spacer .hero-text p {
+  margin: 10px;
+  font-size: 1.4rem;
+}
+
+.spacer .sign {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  background-color: #212326;
+  border-radius: 20px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 16px;
+  text-align: center;
+  margin: 10px 0px;
+  box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #ff416c, #ff4b2b);
+}
+
+.sign input {
+  height: 65px;
+  width: 450px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 1.3rem;
+}
+
+.sign .btn {
+  border-radius: 10px;
+  margin: 5px 0px;
+  height: 65px;
+  width: 450px;
+  font-size: 1.3rem;
+}
+
+.sign {
+  padding-top: 3vh;
+}
+.sign .btn {
+  margin: 15px;
+}
+
+.spacer img {
+  max-width: 750px;
+  display: block;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.spacer {
+  aspect-ratio: 900/400;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layer1 {
+  background-image: url("img/bluewave.svg");
+}
+
+/* ==== FEATURES ==== */
+
+.features {
+  height: 600px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.position i {
+  margin-top: 15vh;
+}
+
+.position h1 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.position p {
+  margin-top: 20px;
+  margin-right: 50px;
+  font-size: 1.2rem;
+}
+
+.features h1 {
+  font-size: 2rem;
+}
+
+/* ==== ENDORSEMENT SCHOOLS ==== */
+
+.schools h1 {
+  padding-top: 50px;
+  font-size: 2.5rem;
+}
+
+.schools .card {
+  margin: 70px 0;
+}
+
+.card img {
+  margin-top: 20px;
+  max-width: 200px;
+}
+
+
+.schools .card:hover {
+  /* negative go up  */
+  transform: translateY(-15px);
+  cursor: pointer;
+}
+
+.schools .flex {
+  flex-wrap: wrap;
+}
+
+/* ==== QUOTE SECTION ==== */
+
+.quote {
+  height: 400px;
+}
+
+.quote h1 {
+  margin-top: 100px;
+  font-size: 1.7rem;
+}
+
+.quote p {
+  margin: 30px 0;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.quote .btn {
+  box-shadow: none;
+  border-radius: 10px;
+  margin: 5px 0px;
+  height: 6vh;
+  width: 15vw;
+  font-size: 1.3rem;
+}
+
+/* ==== FAQ ====  */
+
+.faq .flex {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.faq .container {
+  height: 850px;
+}
+
+.faq .card {
+  background-color: #f3f3f3;
+  box-shadow: none;
+  width: 1200px;
+  height: 720px;
+}
+
+.faq a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #333;
+}
+
+.faq h1 {
+  margin: 35px 0;
+  margin-bottom: 50px;
+  font-size: 2rem;
+}
+
+.faq h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 10px 0;
+}
+
+.card p,
+.card h2,
+.card ul {
+  margin-left: 300px;
+  max-width: 640px;
+  text-align: flex-start;
+}
+
+.card p {
+  padding: 10px 0;
+  font-weight: 100;
+  color: #6b7177;
+  font-size: 20px;
+}
+
+.card ul {
+  font-weight: 100;
+  color: #6b7177;
+  padding-left: 5%;
+  font-size: 18px;
+}
+
+/* ==== FOOTER ==== */
+
+.footer ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #212326;
+  color: #fff;
+}
+
+.footer .social a {
+  color: #fff;
+  margin: 0 10px;
+}
+
+/* ===== RESPONSIVE SECTION ===== */
+
+/* Tablets  */
+@media (max-width: 768px) {
+  .grid,
+  .features .grid,
+  .faq .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .navbar .container,
+  .features .container {
+    flex-direction: column;
+    padding-top: 30px;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    text-align: center;
+    padding-top: 60px;
+  }
+
+  .sign .btn,
+  .sign input {
+    height: 55px;
+    width: 250px;
+  }
+
+  /* feature  */
+  .position p {
+    margin-right: 0;
+  }
+
+  .schools {
+    margin-top: 700px;
+  }
+
+  .quote .btn {
+    height: 55px;
+    width: 250px;
+  }
+
+  .faq .container {
+    margin-top: 100px;
+    height: 1000px;
+  }
+
+  .card p,
+  .card h2,
+  .card ul {
+    margin-left: 0;
+  }
+
+  .faq .card {
+    width: 300px;
+    height: 990px;
+  }
+
+  .footer {
+    margin-top: 70px;
+    height: 100px;
+  }
+}
+/* Mobile  */
+@media (max-width: 500px) {
+  .navbar {
+    height: 100px;
+  }
+  .navbar .flex {
+    flex-direction: column;
+  }
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .navbar li {
+    margin-left: 0;
+    padding: 0 10px;
+  }
+}
