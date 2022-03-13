@@ -365,6 +365,10 @@ body {
     padding-top: 30px;
     text-align: center;
   }
+  
+  .spacer img {
+    width: 330px;
+  }
 
   .hero-text h1 {
     text-align: center;
