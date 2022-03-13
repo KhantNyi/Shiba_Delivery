@@ -395,6 +395,11 @@ body {
 
   .schools h1{
     text-align: center;
+    margin: 0 15px;
+  }
+  
+  .schools .card {
+    margin: 25px 0;
   }
 
   .quote .btn {
