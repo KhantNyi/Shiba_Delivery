@@ -148,6 +148,7 @@ body {
   margin: 8px 0;
   display: inline-block;
   border-radius: 10px;
+  border: none;
   box-sizing: border-box;
   font-size: 1.3rem;
 }
